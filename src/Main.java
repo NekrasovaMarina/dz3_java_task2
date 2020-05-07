@@ -14,28 +14,26 @@ public class Main {
      */
 
     public static void main(String[] args) {
-
+        int mobileAccount = 100; // счёт клиента сотового оператора = 100 рублей
         int amount1 = 100; // сумма пополнения меньше граничного значения
         long bonus = 0L;
         if (amount1 < 1000) {
-            System.out.println(bonus);
+            System.out.println("Вы пополнили баланс на " + amount1 + " рублей. Состояние вашего счёта = " + (mobileAccount + amount1) + " рублей. Ваш бонус = " + bonus + " рублей.");
         }
 
         int amount2 = 1000; // сумма пополнения равна граничному значению
         if (amount2 == 1000) {
-            System.out.println(bonus);
+            System.out.println("Вы пополнили баланс на " + amount2 + " рублей. Состояние вашего счёта = " + (mobileAccount + amount2) + " рублей. Ваш бонус = " + bonus + " рублей.");
         }
 
-        int mobileAccount = 100; // счёт клиента сотового оператора = 100 рублей
-        int amount3 = 1001; // сумма пополнения больше граничного значения
+        int amount3 = 1001; // сумма пополнения незначительно больше граничного значения
         if (amount3 > 1000) {
-            System.out.println((mobileAccount + amount3) / 100);
+            System.out.println("Вы пополнили баланс на " + amount3 + " рублей. Состояние вашего счёта = " + (mobileAccount + amount3) + " рублей. Ваш бонус = " + (mobileAccount + amount3) / 100 + " рублей.");
         }
 
-        int amount4 = 20000; // сумма пополнения значительно больше граничного значения
+        int amount4 = 2000; // сумма пополнения больше граничного значения
         if (amount4 > 1000) {
-            System.out.println((mobileAccount + amount4) / 100);
+            System.out.println("Вы пополнили баланс на " + amount4 + " рублей. Состояние вашего счёта = " + (mobileAccount + amount4) + " рублей. Ваш бонус = " + (mobileAccount + amount4) / 100 + " рублей.");
         }
-
     }
 }
