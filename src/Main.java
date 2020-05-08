@@ -15,12 +15,12 @@ public class Main {
 
     public static void main(String[] args) {
         int mobileAccount = 100; // счёт клиента сотового оператора = 100 рублей
-        int amount = 2000; // сумма пополнения
+        int amount = 1001; // сумма пополнения
         int bonus = 0;
         if (amount <= 1000) {
             System.out.println("Вы пополнили баланс на " + amount + " рублей. Ваш бонус = " + bonus + " рублей.");
-        } else
-        { System.out.println("Вы пополнили баланс на " + amount + " рублей. Ваш бонус = " + amount / 100 + " рублей.");
+        } else {
+            System.out.println("Вы пополнили баланс на " + amount + " рублей. Ваш бонус = " + amount / 100 + " рублей.");
         }
     }
 }
